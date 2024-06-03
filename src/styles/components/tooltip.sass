@@ -1,0 +1,40 @@
+.tooltop
+  display: inline-block
+  position: relative
+  margin-left: 10px
+
+  &:hover
+    .tooltop__content
+      opacity: 1
+      pointer-events: auto
+
+  &__icon
+    width: 20px
+    height: 20px
+
+  &__content
+    display: block
+    position: absolute
+    min-width: 200px
+    left: auto
+    top: 0
+    padding-top: 20px
+    right: 0
+    opacity: 0
+    pointer-events: none
+    z-index: 10
+    color: #1D283A
+
+    .text
+      @include flex-column
+      gap: 1rem
+      background: $whiteColor
+      border-radius: 5px
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2)
+      padding: 1rem
+
+    *
+      font-size: 1.4rem
+
+    .title
+      color: #0F1729

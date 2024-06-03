@@ -1,0 +1,1975 @@
+.banner
+  width: 100%
+  padding: 13.5rem 0 6rem
+  background: url('../public/bg--banner.jpg') no-repeat 50% 50%
+  background-size: cover
+  margin-bottom: 6rem
+
+  @include tablet
+    padding: 11.5rem 0 4rem
+    margin-bottom: 4rem
+
+  @include netbook
+    padding-top: 9rem
+
+  .container
+    @include tablet
+      padding: 0 1rem
+
+  &__text
+    padding-left: 3rem
+
+    @include tablet
+      padding-left: 0
+
+  &__presentation
+    color: $blueColor
+    font-weight: 500
+
+    @include tablet
+      margin-bottom: 2.5rem
+    @include mobile
+      margin-bottom: 1.5rem
+
+  h1
+    margin-bottom: 1.5rem
+    @include tablet
+      margin-bottom: 1.3rem
+    @include mobile
+      margin-bottom: 0.7rem
+
+  &__description
+    font-size: 1.6rem
+    margin-bottom: 4rem
+    max-width: 38%
+
+    @include desktop_s
+      max-width: 50%
+
+    @include netbook
+      max-width: 100%
+      margin-bottom: 2.5rem
+
+.section__header
+  margin-bottom: 2.6rem
+
+  h2
+    margin-bottom: 1rem
+
+  p
+    max-width: 40%
+
+    @include netbook
+      max-width: 100%
+
+    &.c-gray
+      color: #65758B !important
+
+.border-gray
+  @include border(1px, 12px, $grayBorderColor)
+.border-gray-l
+  @include border(1px, 12px, #F1F5F9)
+
+.current
+  padding: 3rem
+  background: $whiteColor
+  margin-bottom: 6rem
+
+  @include tablet
+    padding: 3rem 1rem
+  @include tablet
+    margin-bottom: 4rem
+
+  .border-gray-l
+    margin-bottom: 2.5rem
+
+.teeth
+  display: grid
+  grid-template-columns: 1218px 1fr
+
+  @include desktop_m
+    grid-template-columns: 1030px 1fr
+  @include desktop_s
+    grid-template-columns: 1fr
+    gap: 1rem
+  @include desktop_xs
+    display: flex
+    flex-direction: column
+    gap: 0
+
+  &__formula
+    width: 845px
+    height: 330px
+    @include desktop_xs
+      zoom: 0.81
+    @include netbook
+      zoom: 1
+      width: 850px
+
+    & > img
+      max-width: 100%
+
+  &__header
+    min-height: 7rem
+    @include flex-justify-horiz
+    align-items: center
+    gap: 2rem
+    padding: 1.7rem 2rem
+    background: #f1f5f9
+
+    @include tablet
+      padding: 1.3rem 1.5rem
+      min-height: 5.5rem
+
+  &__visual
+    background: #f8fafc
+    border-radius: 12px 12px 0 0
+
+    .teeth__header
+      justify-content: space-between
+      border-radius: 12px 0 0 0
+
+      @include tablet
+        border-radius: 12px 12px 0 0
+
+    .teeth__content
+      background: #f8fafc
+      border-radius: 0 0 0 12px
+      padding: 1.5rem 1.5rem 4rem
+      @include desktop_xs
+        padding: 2rem 1.5rem
+
+    .tabs__caption
+      li
+        display: inline-flex
+        align-items: center
+        height: 3.6rem
+        font-size: 1.6rem
+        @include border(1px, 5px, #E1E7EF)
+        padding: 0 1.2rem
+        color: #65758B
+        position: relative
+        background: $whiteColor
+
+        &.active
+          border-color: #A7C0F7
+          background: #D3E0FB
+          color: $blueColor
+          z-index: 5
+
+        &:first-child
+          border-radius: 5px 0 0 5px
+
+        &:last-child
+          margin-left: -1px
+          border-radius: 0 5px 5px 0
+
+  &__info
+    @include tablet
+      border-bottom: 1px solid $grayBorderColor
+
+    .teeth__header
+      border-radius: 0 12px 0 0
+
+    .teeth__header
+      padding: 2rem
+      justify-content: flex-start
+      border-left: 1px solid $grayBorderColor
+
+      @include desktop_s
+        border: none
+      @include tablet
+        border-radius: 20px 20px 0 0
+      @include tablet
+        padding: 1.3rem 1.5rem
+        border-radius: 0
+
+    .teeth__content
+      border-radius: 0 0 12px 0
+
+      & > *
+        display: none
+
+        &.active
+          display: block
+
+  &__content
+    padding: 1.5rem 1.5rem 2rem
+
+    @include mobile
+      position: relative
+      padding-left: 5.5rem
+
+    .teeth-number
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 26px
+      height: 26px
+      @include border(1px, 100%, $redColor)
+      color: $redColor
+      font-size: 12px
+      line-height: 26px
+
+      @include mobile
+        position: absolute
+        left: 1rem
+        top: 2rem
+
+  &__scheme-scroll
+    overflow: auto
+    scrollbar-color: #65758B transparent
+    scrollbar-width: thin
+
+    @include desktop_xs
+      padding-bottom: 2rem
+
+  &__scheme
+    display: flex
+    gap: 2rem
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    padding-top: 1.5rem
+
+    @include desktop_l
+      justify-content: flex-start
+      gap: 1.5rem
+    @include desktop_s
+      gap: 1rem
+    @include netbook
+      min-width: 995px
+      column-gap: 0
+    @include tablet
+      padding-top: 0
+
+  &__position
+    @include flex-column
+    gap: 10px
+    align-items: center
+    width: 135px
+
+    //@include netbook
+    //  flex-direction: row
+    //  width: 100%
+
+    & > *
+      width: 13.5rem
+      height: 98px
+      background: $whiteColor
+      border: 1px solid transparent
+      border-radius: 12px
+      cursor: pointer
+      @include flex-center
+
+      @include desktop_m
+        width: 98px
+
+      &:hover,
+      &.active
+        border: 1px solid $grayBorderColor
+
+    .oral
+      span
+        font-size: 1.6rem
+        color: #65758B
+        text-align: center
+
+    .jaw
+      @include flex-column
+      align-items: center
+
+      span
+        color: #65758B
+
+  &__legend
+    @include desktop_m
+      width: 100%
+    @include desktop_s
+      max-width: 90px
+    @include desktop_xs
+      max-width: 100%
+
+    .legend
+      @include flex-column
+      gap: 1rem
+
+      @include desktop_m
+        width: 100%
+        flex-direction: row
+
+      @include desktop_xs
+        min-width: 775px
+        width: auto
+        flex-direction: column
+
+      @include desktop_xs
+        width: 100%
+        flex-direction: row
+
+      &__el
+        @include flex-center-vert
+        gap: 10px
+
+      &__icon
+        width: 20px
+        height: 20px
+        @include border(1px, 6px, transparent)
+
+        &.healthy
+          border-color: $grayBorderColor
+          background: #fff
+        &.actual
+          border-color: $grayBorderColor
+          background: $grayBorderColor
+        &.trouble
+          border-color: $toothCherryDark
+          background: $toothCherryLight
+        &.treated
+          border-color: $toothLimeDark
+          background: $toothLimeLight
+        &.issue
+          border-color: $toothYellowDark
+          background: $toothYellowLight
+        &.absence
+          background: #fff url(/public/sprite.svg#icon-cross-red-view) no-repeat 50% 50%
+          background-size: 20px 20px
+
+      &__text
+        max-width: calc(100% - 30px)
+        color: #1D283A
+        font-size: 1.4rem
+        line-height: 1.2
+
+.media
+  @include flex-column
+  gap: 1.5rem
+
+  .section__header
+    @include flex-center-vert
+    justify-content: space-between
+    margin-bottom: 0
+
+    @include netbook
+      padding-top: 1.5rem
+      padding-bottom: 1.5rem
+      margin-bottom: -1rem
+
+    @include  tablet
+      gap: 1.5rem
+
+  .swiper-slide
+    width: 240px
+
+  &__filter-scroll
+    -ms-overflow-style: none
+    scrollbar-width: none
+    overflow: auto
+
+    &::-webkit-scrollbar
+      display: none
+
+  &__filter
+    @include flex-center-vert
+    flex-wrap: nowrap
+    gap: 3rem
+
+    @include netbook
+      column-gap: 2.5rem
+      row-gap: 0.5rem
+
+    button
+      border-radius: 0
+      background: transparent
+      color: #65758B
+      padding: 0
+      line-height: 1.4rem
+      border-bottom: 1px solid transparent
+      transition: all 0.2s ease-in-out
+
+      @include netbook
+        text-align: left
+        white-space: nowrap
+
+      &:hover
+        border-bottom: 1px solid currentColor
+
+      &.active
+        color: #2463EB
+        border-bottom: 1px solid currentColor
+        cursor: default
+
+  &__scroll-wrap
+    overflow: hidden
+
+  &__content
+    display: flex
+    align-items: flex-start
+    gap: 2rem
+    flex-wrap: nowrap
+    padding-bottom: 3rem
+    position: relative
+
+  &__el
+    @include flex-column
+    gap: 1rem
+
+  .swiper-wrapper
+    width: 100%
+
+  &__img
+    width: 24rem
+    height: 14rem
+    border-radius: 1rem
+    position: relative
+    overflow: hidden
+
+    &:hover
+      &:after
+        opacity: .6
+      &:before
+        opacity: 1
+
+    &:before
+      position: absolute
+      content: ""
+      width: 24px
+      height: 24px
+      background: url(/public/sprite.svg#icon-zoom-view)
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      z-index: 10
+      transition: all 0.2s ease-in-out
+      opacity: 0
+
+
+    &:after
+      position: absolute
+      content: ""
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: #0F1729
+      transition: all 0.2s ease-in-out
+      opacity: 0
+
+    img
+      min-width: 100%
+      min-height: 100%
+      object-fit: cover
+
+.types
+  background: $whiteColor
+  margin-bottom: 4rem
+
+  @include tablet
+    padding: 2rem 1rem
+  @include mobile
+    padding: 0
+
+  .section__header
+    padding: 3rem
+    margin-bottom: 0
+
+    @include mobile
+      padding: 2rem 1rem
+
+  .row
+    @include mobile
+      margin: 0 1rem
+      border: 1px solid #F1F5F9
+      border-radius: 12px
+
+    .swiper-slide:not(:last-child)
+      .type__content
+        border-right: 1px solid #F1F5F9
+
+  .row.row-1
+    .type
+      border-radius: 12px
+      border: 1px solid #F1F5F9
+
+      &__header
+        border-radius: 12px 12px 0 0
+
+      &__info
+        display: grid
+        grid-template-columns: repeat(2, calc(50% - 1rem))
+        gap: 2rem
+
+        @include tablet
+          display: flex
+
+      &__img
+        width: 900px
+        height: 540px
+        text-align: right
+
+        @include desktop_l
+          width: calc((100vw - 80px - 30px)/2 - 10px)
+          height: calc(((100vw - 80px - 30px)/2 - 10px) * 0.588)
+
+        @include tablet
+          width: 100%
+          height: calc((100vw - 80px ) * 0.588)
+
+  .row.row-2
+    gap: 0
+    grid-template-columns: repeat(2, 50%)
+    border-top: 1px solid #E1E7EF
+
+    .swiper-slide
+      &:first-child
+        .type,
+        .type__header
+          @include mobile
+            border-radius: 12px 0 0 0
+      &:last-child
+        .type,
+        .type__header
+          @include mobile
+            border-radius: 0 12px 0 0
+
+    &.swiper-wrapper
+      padding-bottom: 0
+
+      @include netbook
+        gap: 0 !important
+        flex-wrap: nowrap
+        margin: 0
+
+    .type
+      &:first-child
+        border-right: 1px solid #E1E7EF
+
+      &__info
+        display: grid
+        grid-template-columns: repeat(2, calc(50% - 1rem))
+        gap: 2rem
+
+        @include desktop_m
+          grid-template-columns: 100%
+
+      &__img
+        width: 100%
+        height: 500px
+        height: calc(((100vw - 80px )/4 - 60px) * 0.588)
+        @include desktop_m
+          height: calc(((100vw - 80px )/2 - 60px) * 0.588)
+        @include desktop_s
+          width: 100%
+          height: 270px
+        @include tablet
+          height: 205px
+
+    & > .swiper-slide
+      @include netbook
+        width: 520px
+      @include tablet
+        width: 80vw
+
+  .row.row-3
+    gap: 0
+    grid-template-columns: repeat(3, calc(100%/3))
+    border-top: 1px solid #E1E7EF
+
+    .swiper-slide
+      &:first-child
+        .type,
+        .type__header
+          @include mobile
+            border-radius: 12px 0 0 0
+      &:last-child
+        .type,
+        .type__header
+          @include mobile
+            border-radius: 0 12px 0 0
+
+    &.swiper-wrapper
+      padding-bottom: 0
+
+      @include netbook
+        gap: 0 !important
+        flex-wrap: nowrap
+        margin: 0
+
+    .swiper-slide:not(:last-child)
+      .type
+        border-right: 1px solid #E1E7EF
+
+    .type
+      &__img
+        @include desktop_l
+          height: calc(((100vw - 80px )/3 - 60px) * 0.588)
+        @include desktop_s
+          width: 100%
+          height: 270px
+        @include tablet
+          height: 205px
+
+        picture,
+        img
+          @include desktop_s
+            width: 100%
+
+    & > .swiper-slide
+      @include desktop_s
+        width: 520px
+      @include tablet
+        width: 80vw
+
+  .swiper-type.type-2,
+  .swiper-type.type-3
+    @include  tablet
+      margin: 0 1rem
+
+  .type
+    overflow: hidden
+    background: $whiteColor
+
+    &.alternative
+      background: #f8fafc
+
+    &__header
+      padding: 3rem
+      @include flex-justify-horiz
+      flex-wrap: nowrap
+      align-items: center
+      align-content: center
+      background: #F1F5F9
+      min-height: 9rem
+
+      @include tablet
+        padding: 1rem
+      @include tablet
+        flex-wrap: nowrap
+
+      h3
+        font-weight: 600
+
+        @include desktop_m
+          min-height: 6.5rem
+          display: inline-flex
+          align-items: center
+
+    &__priority
+      display: inline-block
+      width: auto
+      padding: 4px 8px
+      border-radius: 6px
+      @include font-params(1.2rem, 400, #344256)
+      line-height: 1.2rem
+
+      &-main
+        background: $toothLimeDark
+      &-alternative.doctors
+        background: #FCF5CD
+
+    &__content
+      padding: 2rem 3rem
+      @include flex-column
+      gap: 2rem
+
+      @include tablet
+        padding: 1rem
+
+    &__info
+      @include flex-column
+      gap: 2rem
+
+    &__params
+      @include flex-column
+      gap: 1.5rem
+      align-items: flex-start
+      font-size: 1.4rem
+      line-height: 1.8rem
+
+      .params
+        width: 100%
+        @include flex-column
+        gap: 1.5rem
+
+        .param
+          display: grid
+          grid-template-columns: 15px 1fr
+          gap: 12px
+
+          @include tablet
+            display: flex
+
+          &__icon
+            width: 15px
+            height: 16px
+            display: inline-block
+
+            svg
+              color: #65758B
+
+          &__text
+            display: inline-block
+            color: #1D283A
+            padding-top: 2px
+            height: auto
+
+            strong
+              font-weight: 500
+
+              @include tablet
+                display: block
+
+    &__description
+      color: #48566A
+      font-size: 1.6rem
+      line-height: 2.4rem
+      min-height: 3.5rem
+
+      @include tablet
+        font-size: 1.4rem
+        line-height: 1.8rem
+
+    &__price
+      padding: 7px 1rem
+      background: #E1E7EF
+      border-radius: 6px
+      @include flex-center-vert
+      gap: 12px
+      color: #1D283A
+      display: inline-flex
+      width: auto
+      font-weight: 500
+
+      strong
+        font-size: 1.6rem
+        padding-left: 7px
+
+    &__img
+      overflow: hidden
+      border-radius: 12px
+
+      picture
+        width: 100%
+        height: 100%
+        position: relative
+
+      img
+        min-width: 100%
+        min-height: 100%
+        object-fit: cover
+
+.variants
+  .slider__header
+    @include flex-center-vert
+    justify-content: space-between
+    margin-bottom: 1rem
+
+    span.title
+      color: #1D283A
+      font-size: 2rem
+      line-height: 2.8rem
+      font-weight: 500
+
+      @include tablet
+        font-size: 1.6rem
+        line-height: 2.4rem
+
+  .slider__content
+    padding-bottom: 1.5rem
+
+  .swiper-slide
+    width: 180px
+
+  .variant
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08)
+    background: #f1f5f9
+    border-radius: 12px
+    padding: 1.5rem 1rem
+    @include flex-column
+    gap: 9px
+    width: 180px
+
+    &__title
+      display: block
+      color: #1D283A
+      font-weight: 500
+      line-height: 2.4rem
+
+    &__param
+      @include flex-column
+      gap: 2px
+
+      .name
+        color: #1D283A
+        font-size: 1.2rem
+        line-height: 2rem
+
+      .value
+        color: #1D283A
+        font-size: 1.4rem
+        line-height: 1.8rem
+        font-weight: 500
+
+.estimate
+  padding: 3rem
+  background: $whiteColor
+  margin-bottom: 6rem
+
+  @include tablet
+    padding: 1.5rem 1rem
+    padding: 0
+    margin-bottom: 4rem
+
+  &__type:not(:last-child)
+    margin-bottom: 4rem
+
+  &__header
+    @include flex-center-vert
+    flex-wrap: nowrap
+    justify-content: space-between
+    margin-bottom: 1.8rem
+
+    @include tablet
+      padding: 1.5rem 1rem 0
+
+    @include netbook
+      flex-direction: column
+      align-items: flex-start
+
+    .params
+      @include flex-center-vert
+      column-gap: 4rem
+
+      @include netbook
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        gap: 0.5rem
+        margin-top: 1rem
+
+      .param
+        @include flex-center-vert
+        gap: 12px
+
+        &__icon
+          @include tablet
+            margin-top: -3px
+
+        &__text
+          @include font-params(1.8rem, 500, #1D283A)
+
+          @include tablet
+            font-size: 1.4rem
+            line-height: 1.8rem
+
+  &__body
+    display: flex
+    align-items: stretch
+    gap: 2rem
+    @include netbook
+      gap: 0
+      flex-direction: column
+
+  &__sticky
+    width: 290px
+
+    &.open
+      .estimate__aside
+        height: calc(100vh - 60px - 72px)
+
+    @include netbook
+      position: sticky
+      top: 0
+      z-index: 20
+      background: $whiteColor
+      width: 100%
+      overflow: visible
+
+  &__aside
+    display: grid
+    grid-template-rows: 5.5rem 1fr 5.5rem
+    gap: 1.7rem
+
+    @include netbook
+      position: absolute
+      background: $whiteColor
+      top: 70px
+      right: 0
+      left: 0
+      transition: all 0.2s ease-in-out
+      overflow: hidden
+      height: 0
+      display: flex
+      flex-direction: column
+
+    &__scroll-wrap
+      position: sticky
+      top: 70px
+      max-height: calc(95vh - 120px)
+      overflow: auto
+      scrollbar-color: #65758B transparent
+      scrollbar-width: thin
+      padding-right: 2rem
+
+      @include netbook
+        top: 0
+        padding: 0
+        overflow: visible
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2)
+        background: #F1F5F9
+
+  &__start,
+  &__end
+    @include border(1px, 12px, #E1E7EF)
+    padding: 1.5rem
+    @include flex-center-vert
+    gap: 15px
+    font-weight: 500
+    color: #48566A
+    line-height: 2.4rem
+    background: $whiteColor
+    z-index: 5
+    position: relative
+
+    svg
+      color: #48566A
+
+    &.done:hover,
+    &:hover
+      border: 1px solid $blueColor
+
+      svg
+        color: $blueColor
+
+    &:active,
+    &.active,
+    &.done.active
+      border: 1px solid $blueColor
+      background: $blueColor
+
+      .step__description
+        color: #fff !important
+
+      svg
+        color: #fff
+
+    &.done
+      border: 1px solid #F0F6FF
+      background: $whiteColor
+      color: #1D283A
+
+      .step__description
+        color: #1D283A
+
+      svg
+        color: #1D283A
+
+  &__steps
+    overflow: hidden
+    @include flex-column
+    gap: 8px
+    counter-reset: heading
+    position: relative
+
+    @include netbook
+      flex-wrap: nowrap
+      overflow: auto
+      padding-right: 20px
+      scrollbar-color: #65758B transparent
+      scrollbar-width: thin
+
+    &:before
+      position: absolute
+      z-index: 0
+      width: 2px
+      border-radius: 10px
+      top: 0
+      bottom: 0
+      background: #CBD5E1
+      left: 10px
+      content: ""
+
+    .step
+      @include flex-column
+      gap: 8px
+      position: relative
+      padding-left: 30px
+      counter-increment: heading
+      cursor: pointer
+
+      &.done:hover,
+      &:hover
+        .step__description
+          border: 1px solid $blueColor
+        .step__icon
+          border: 1px solid $blueColor
+
+        svg
+          color: $blueColor
+
+      &.done:active,
+      &:active,
+      &.done.active,
+      &.active
+        .step__description
+          border: 1px solid $blueColor
+          background: $blueColor
+          color: #fff
+
+        .step__icon
+          border: 1px solid $blueColor
+          background: $blueColor
+
+        .step__date,
+        .step__name
+          color: #fff !important
+
+        svg
+          color: #fff
+
+      &.done
+        .step__description
+          border: 1px solid #F0F6FF
+          background: $whiteColor
+          color: #1D283A
+
+        .step__icon
+          border: 1px solid #F0F6FF
+          background: $whiteColor
+
+        .step__date,
+        .step__name
+          color: #1D283A
+
+        svg
+          color: #1D283A
+
+      &:before
+        position: absolute
+        content: ''
+        width: 2px
+        border-radius: 10px
+        left: 10px
+        bottom: 50%
+        height: 30000px
+        z-index: 2
+        transition: all 0.2s ease-in-out
+        background: transparent
+
+      &.active
+        .step__description
+          border: 1px solid $blueColor
+          background: $blueColor
+          color: $whiteColor
+
+          &:before
+            background: $blueColor
+
+        .step__icon
+          border: 1px solid $blueColor
+          background: $blueColor
+
+          svg
+            color: $whiteColor
+
+      &__time
+        border-top: 1px dashed #CBD5E1
+        border-bottom: 1px dashed #CBD5E1
+        padding: 5px
+        text-align: center
+        color: #94A3B8
+        font-size: 1.2rem
+        line-height: 1.2rem
+
+      &__description
+        @include flex-column
+        position: relative
+        border-radius: 12px
+        padding: 0.4rem 1.3rem
+        transition: all 0.2s ease-in-out
+        border: 1px solid #E1E7EF
+        color: #1D283A
+        line-height: 1.8rem
+
+        &:before
+          position: absolute
+          content: ''
+          width: 2px
+          border-radius: 10px
+          left: -21px
+          bottom: 50%
+          height: 30000px
+          z-index: 2
+          transition: all 0.2s ease-in-out
+          background: transparent
+
+      &__icon
+        position: absolute
+        left: -30px
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 10
+        width: 20px
+        height: 20px
+        border-radius: 100%
+        @include flex-center
+        border: 1px solid #CBD5E1
+        transition: all 0.2s ease-in-out
+        background: $whiteColor
+
+        svg
+          color: #CBD5E1
+
+      &__date
+        font-size: 1.2rem
+        color: #65758B
+
+      &__name
+        position: relative
+        //padding-left: 20px
+        line-height: 2.4rem
+        font-weight: 500
+        color: #65758B
+
+        //&:before
+        //  position: absolute
+        //  left: 0
+        //  top: 0
+        //  content: counter(heading) ". "
+
+  &__content
+    width: calc(100% - 290px - 2rem)
+    @include tablet
+      padding: 0 1rem 1.5rem
+
+    @include netbook
+      width: 100%
+
+  &__mobile
+    display: none
+
+    @include netbook
+      display: flex
+      align-items: stretch
+
+    .button
+      background: $blueColor
+      border-radius: 0 12px 12px 0
+      color: $whiteColor
+      font-size: 1.4rem
+      width: 90px
+      min-height: 7rem
+
+      @include netbook
+        border-radius: 0
+
+    .estimate__current
+      border: none
+      background: transparent
+      padding: 1rem
+
+      @include tablet
+        align-content: flex-start
+        align-items: flex-start
+        justify-content: center
+
+      .step__date
+        color: #1D283A
+        font-size: 1.2rem
+        line-height: 1.2rem
+        letter-spacing: -1px
+
+      .step__name
+        letter-spacing: -1px
+
+
+  &__current
+    @include netbook
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      height: 60px
+      width: calc(100% - 60px)
+      text-align: center
+      border: 1px solid $blueColor
+      border-radius: 12px
+
+    .step__icon
+      display: none
+
+.content-step
+  border-radius: 12px
+  border: 1px solid #E1E7EF
+  background: #F8FAFC
+  overflow: hidden
+
+  &:first-child
+    border-color: transparent
+    margin: 0 !important
+
+  &:not(:last-child)
+    margin-bottom: 4rem
+
+    @include mobile
+      padding-bottom: 1.5rem
+
+  &__visual
+    padding: 2rem 2rem 0
+    margin-bottom: 4rem
+
+    @include tablet
+      padding: 1rem
+      margin-bottom: 2rem
+
+  &__header
+    background: transparent
+    @include flex-center-vert
+    justify-content: space-between
+    margin-bottom: 2rem
+
+    @include tablet
+      flex-direction: column
+      gap: 1rem
+      justify-content: flex-start
+      align-items: flex-start
+
+    h4
+      @include tablet
+        margin-bottom: 1.5rem
+
+  &__body
+    display: grid
+    grid-template-columns: 1140px 1fr
+    gap: 1rem
+
+    @include desktop_l
+      grid-template-columns: 995px 1fr
+    @include desktop_m
+      grid-template-columns: 1fr
+      gap: 3rem
+    @include tablet
+      gap: 1rem
+
+    &.illustration
+      grid-template-columns: 700px 1fr
+
+      @include desktop_s
+        grid-template-columns: 1fr
+
+    .teeth__position
+      pointer-events: none
+
+      @include desktop_s
+        flex-direction: row
+        width: 100%
+
+    .teeth__scheme
+      gap: 1rem
+      align-items: center
+
+      @include desktop_xs
+        max-width: 100%
+        overflow: auto
+        scrollbar-color: #65758B transparent
+        scrollbar-width: thin
+        padding-bottom: 1rem
+      
+      .formula__el
+        cursor: default
+
+      .teeth__formula
+        @include desktop_m
+          zoom: 0.89
+        @include desktop_xs
+          zoom: 1
+
+        .formula
+          @include desktop_xs
+            overflow: visible
+
+          .formula__el
+            pointer-events: none
+
+      .teeth__legend
+        max-width: 130px
+
+        @include desktop_l
+          max-width: 100%
+        @include desktop_xs
+          max-width: 845px
+          width: 845px
+
+        .legend
+          @include desktop_l
+            flex-direction: row
+          @include desktop_s
+            flex-direction: row
+          @include desktop_xs
+            max-width: 845px
+            width: 845px
+
+  &__photo
+    width: 700px
+    height: 410px
+
+    @include desktop_xs
+      width: 500px
+      height: 295px
+    @include netbook
+      width: 100%
+      height: calc((100vw - 60px) / 1.7)
+
+    & > div
+      width: 100%
+      height: 100%
+      border-radius: 12px
+      overflow: hidden
+
+      picture,
+      img
+        border-radius: 12px
+        object-fit: cover
+        min-height: 100%
+        min-width: 100%
+
+  &__comment
+    @include flex-column
+    gap: 5px
+
+    @include desktop_l
+      width: 100%
+    @include netbook
+      border: none
+    @include tablet
+      padding: 1rem 0
+
+    span.title
+      color: #344256
+      font-weight: 500
+      font-size: 1.6rem
+      line-height: 2.4rem
+
+      @include mobile
+        font-size: 1.4rem
+
+    p
+      color: #65758B
+      font-size: 1.6rem
+
+      @include mobile
+        font-size: 1.4rem
+
+    .comment-radio
+      @include flex-center-vert
+      padding: 8px 0
+      gap: 12px
+      cursor: pointer
+
+      span
+        color: #48566A
+        font-size: 1.4rem
+
+      input
+        display: none
+
+        &:checked + .psevdoradio
+          border-color: $blueColor
+          background: $blueColor
+
+          &:before
+            left: 17px
+            background: $whiteColor
+
+      .psevdoradio
+        width: 42px
+        height: 26px
+        border: 2px solid #E1E7EF
+        border-radius: 16px
+        position: relative
+        background: #E1E7EF
+        transition: all 0.2s ease-in-out
+
+        &:before
+          content: ""
+          position: absolute
+          width: 20px
+          height: 20px
+          border-radius: 100%
+          background: #94A3B8
+          transition: all 0.2s ease-in-out
+          left: 2px
+          top: 50%
+          transform: translateY(-50%)
+          z-index: 5
+
+  &__calculation
+    .notification
+      @include flex-center-vert
+      gap: 10px
+      padding: 10px 16px
+      background: #FDECCE
+
+      span
+        width: calc(100% - 40px)
+        color: #C47F08
+        font-size: 1.4rem
+        line-height: 1.8rem
+
+  &__scroll-wrap
+    overflow: auto
+    max-width: 100%
+    scrollbar-color: #65758B transparent
+    scrollbar-width: thin
+
+  &__table
+    border-collapse: collapse
+    border-spacing: 0
+    background: $whiteColor
+    min-width: 100%
+
+    @include tablet
+      font-size: 1.4rem
+      line-height: 1.8rem
+
+    .tooltop
+      &__content
+        right: auto
+        left: 0
+
+    &.fix-1
+      tr:first-child th:first-child
+        background: #E1E7EF
+
+      tr th:first-child,
+      tr td:first-child
+        position: sticky
+        width: 330px
+        min-width: 330px
+        left: 0
+        z-index: 10
+        background: #f8fafc
+        vertical-align: middle
+
+        &:hover
+          z-index: 20 !important
+
+        @include tablet
+          width: 180px
+          min-width: 180px
+
+      tr.step-row
+        th.no-border-left,
+        td.no-border-left
+          min-width: 160px
+          @include tablet
+            min-width: 140px
+
+      tr
+        td
+          text-align: center
+
+          &:first-child
+            text-align: left
+
+    &.fix-3
+      tr
+        th:hover
+          z-index: 20 !important
+
+      tr:first-child th:nth-child(1)
+        background: #E1E7EF
+        text-align: left
+
+      tr th:nth-child(1),
+      tr td:nth-child(1),
+      tr td:nth-child(2)
+        position: sticky
+        z-index: 10
+        background: #f8fafc
+        vertical-align: middle
+        word-wrap: break-word
+
+        &:hover
+          z-index: 20 !important
+
+      tr th:nth-child(1),
+      tr td:nth-child(1)
+        min-width: 340px
+        width: 340px
+        left: 0
+        border-right: none
+
+        @include desktop_s
+          width: 220px
+          min-width: 220px
+        @include tablet
+          width: 135px
+          min-width: 135px
+          max-width: 135px
+
+      tr th:nth-child(2),
+      tr td:nth-child(2)
+        min-width: 80px
+        width: 80px
+        left: 340px
+        border-right: none
+        border-left: none
+        padding-left: 10px
+        padding-right: 10px
+        vertical-align: top
+
+        @include desktop_s
+          left: 220px
+        @include tablet
+          left: 135px
+        @include mobile
+          min-width: 65px
+          width: 65px
+          text-align: center
+
+    tr
+      th
+        padding: 0.5rem 1.5rem 0.6rem
+        text-align: center
+        vertical-align: middle
+        color: #1D283A
+        font-weight: 500
+        font-size: 1.6rem
+        background: #f1f5f9
+
+        @include tablet
+          padding: 1rem
+          font-size: 1.4rem
+          line-height: 1.8rem
+
+      &.step-row
+        td
+          min-width: 110px
+          padding-top: 13px
+          padding-left: 1.5rem
+          padding-right: 1.5rem
+          padding-bottom: 2px
+          color: #94A3B8
+          font-size: 1.2rem
+          line-height: 1.8rem
+          border: 1px solid #cbd5e1
+          border-top: none
+
+          &.no-border-left
+            @include tablet
+              min-width: 105px
+
+          &.no-border-right
+            @include tablet
+              min-width: 75px
+
+          &:first-child
+            border-left: none
+          &:last-child
+            border-right: none
+
+      &.through
+        td
+          border: none
+
+      &.total
+        font-weight: 500
+
+        td
+          border-top: none
+          border-bottom: none
+          text-align: center
+
+          &:first-child
+            text-align: left
+
+        &.blue
+          td
+            color: $blueColor
+        &.gray
+          td
+            color: #65758B
+
+      td
+        padding: 8px 15px
+        color: #1D283A
+        font-size: 1.6rem
+        line-height: 2.4rem
+        border: 1px solid #cbd5e1
+        border-bottom: 1px dashed #cbd5e1
+        border-top: 1px dashed #cbd5e1
+        position: relative
+        z-index: 5
+
+        @include tablet
+          padding: 1rem !important
+          font-size: 1.4rem
+          line-height: 1.8rem
+        @include mobile
+          padding: 8px 10px !important
+
+        &:first-child
+          border-left: none
+          z-index: 20
+
+        &:last-child
+          border-right: none
+
+        &.no-border-right
+          border-right: none
+          text-align: center
+        &.no-border-left
+          border-left: none
+          text-align: center
+
+        span.crossed
+          display: block
+          color: #65758B
+          font-size: 1.2rem
+          line-height: 1.2rem
+          text-decoration: line-through
+
+.team
+  padding: 3rem
+  border-radius: 12px
+  background: $whiteColor
+  margin-bottom: 6rem
+
+  @include tablet
+    padding: 3rem 1rem
+    margin-bottom: 4rem
+
+.doctors
+  background: #f8fafc
+
+  .swiper
+    padding-bottom: 2rem
+
+  &__header
+    background: #f1f5f9
+    padding: 15px 30px
+    @include flex-center-vert
+    justify-content: space-between
+
+    @include tablet
+      padding-left: 2rem
+      padding-right: 2rem
+
+  &__body
+    padding: 30px
+    overflow: hidden
+    position: relative
+    z-index: 10
+
+    @include tablet
+      padding: 1rem
+
+  .swiper-slide
+    width: 250px
+
+.doctor
+  width: 250px
+  border: 1px solid #E1E7EF
+  border-radius: 12px
+  overflow: hidden
+  background: $whiteColor
+
+  &:hover
+    border-color: $blueColor
+
+    @include netbook
+      border: 1px solid #E1E7EF
+
+  &__img
+    height: 250px
+    overflow: hidden
+
+    picture,
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__content
+    height: calc(100% - 250px)
+    min-height: 212px
+    @include flex-column
+    gap: 1rem
+    padding: 2rem 2rem 5rem
+    position: relative
+
+    @include mobile
+      min-height: 160px
+
+  &__name
+    color: #1D283A
+    font-size: 2rem
+    line-height: 2.6rem
+    font-weight: 500
+
+    @include mobile
+      font-size: 1.6rem
+      line-height: 2.4rem
+
+  &__edu
+    color: #65758B
+    font-size: 1.4rem
+    line-height: 1.8rem
+
+  &__more
+    color: $blueColor
+    font-size: 1.4rem
+    line-height: 1.8rem
+    position: absolute
+    left: 2rem
+    bottom: 2rem
+
+    @include mobile
+      font-size: 1.6rem
+      line-height: 2rem
+
+.curator
+  border-radius: 12px
+  overflow: hidden
+  background: #f0f6ff
+
+  &__header
+    background: #F0F6FF
+    padding: 15px 30px
+    @include flex-center-vert
+    justify-content: space-between
+
+    @include mobile
+      padding: 15px 20px
+
+  &__body
+    padding: 30px
+    display: grid
+    align-items: flex-start
+    grid-template-columns: 250px 520px 1fr
+    @include desktop_m
+      grid-template-columns: 250px 380px 1fr
+    @include netbook
+      display: flex
+      gap: 2rem
+      flex-wrap: wrap
+    @include tablet
+      padding: 1.5rem 1rem
+      gap: 1rem
+
+  &__userpic
+    border-radius: 10px
+    overflow: hidden
+
+    picture,
+    img
+      width: 100%
+
+  &__data
+    padding-left: 4rem
+
+    @include netbook
+      padding-left: 2rem
+    @include mobile
+      padding-left: 0
+
+  &__name
+    display: block
+    color: #1D283A
+    font-size: 2rem
+    line-height: 2.8rem
+    font-weight: 500
+    margin-bottom: 15px
+
+    @include tablet
+      font-size: 1.6rem
+      line-height: 2.4rem
+      margin-bottom: 1rem
+
+  &__contacts
+    display: flex
+    align-items: flex-start
+    gap: 15px
+    margin-bottom: 5px
+
+    @include mobile
+      flex-direction: column
+
+  &__phones
+    @include flex-column
+    gap: 5px
+
+    a
+      display: block
+      font-size: 1.6rem
+      line-height: 2.4rem
+      font-weight: 500
+      color: #1D283A
+
+      @include tablet
+        font-size: 1.4rem
+        line-height: 1.8rem
+
+      &:hover
+        color: $blueColor
+      &:active
+        color: #65758B
+
+
+  &__social
+    @include flex-center-vert
+    gap: 8px
+
+    a
+      &:hover,
+      &:active
+        svg
+          opacity: 1
+
+      svg
+        transition: all 0.2s ease-in-out
+        opacity: 0.7
+
+  &__mail
+    a
+      color: #1D283A
+      display: block
+      font-size: 1.6rem
+      line-height: 2.4rem
+
+      @include tablet
+        font-size: 1.4rem
+        line-height: 1.8rem
+
+      &:hover
+        color: $blueColor
+      &:active
+        color: #65758B
+
+  &__quote
+    border: 1px solid #E1E7EF
+    border-radius: 20px
+    padding: 4rem
+    @include flex-column
+    gap: 10px
+
+    @include netbook
+      width: 100%
+    @include tablet
+      padding: 2rem
+
+    p
+      color: #1D283A
+      line-height: 2.4rem
+
+.about
+  padding: 3rem
+  border-radius: 12px
+  background: $whiteColor
+  margin-bottom: 6rem
+
+  @include tablet
+    padding: 3rem 1rem
+
+  .section__header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 2rem
+
+.benefit
+  //margin-bottom: 4rem
+  //@include tablet
+  //  margin-bottom: 3rem
+
+  .swiper
+    padding-bottom: 1rem
+
+  .swiper-slide
+    width: 380px
+    display: flex
+    align-items: stretch
+
+    @include tablet
+      width: 300px
+
+  &__el
+    width: 380px
+    border-radius: 10px
+    padding: 20px
+    background: #f0f6ff
+
+    @include tablet
+      padding: 1.5rem
+
+    span.title
+      display: block
+      color: #1D283A
+      font-weight: 500
+      font-size: 1.8rem
+      line-height: 2.4rem
+      margin-bottom: 12px
+
+      @include tablet
+        font-size: 1.6rem
+
+    p
+      color: #48566A
+
+.about
+  padding: 4rem
+
+.about-info
+  h2
+    margin-bottom: 20px
+
+  &__el
+    border-radius: 12px
+    padding: 14px 20px
+    border: 1px solid #E1E7EF
+
+    span.title
+      display: block
+      color: #1D283A
+      font-weight: 500
+      line-height: 2.4rem
+      margin-bottom: 8px
+      font-size: 1.6rem
+
+    p
+      font-size: 1.6rem
+      color: #1D283A
+
+      @include tablet
+        font-size: 1.4rem
+
+.law
+  background: #f0f6ff
+  border-radius: 12px
+  overflow: hidden
+
+  @include tablet
+    padding: 0 1rem
+
+  .section__header
+    background: #D3E0FB
+    padding: 20px 30px
+
+    @include tablet
+      border-radius: 12px 12px 0 0
+      padding: 2rem
+      margin-bottom: 0
+
+      h2
+        margin-bottom: 0
+
+  &__body
+    padding: 30px
+
+    @include tablet
+      padding: 2rem 1.5rem
+
+    p
+      color: #1D283A
+      line-height: 2.4rem

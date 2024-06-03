@@ -1,0 +1,44 @@
+.container
+  width: 100%
+  padding: 0 4rem
+  max-width: 192rem
+  margin: 0 auto
+
+  @include tablet
+    padding: 0
+
+.row
+  display: grid
+  gap: 2rem
+
+  &-2,
+  &-2.swiper-wrapper
+    display: grid
+    grid-template-columns: repeat(2, calc(50% - 1rem))
+
+    @include netbook
+      gap: 2rem !important
+      flex-wrap: wrap
+      display: flex !important
+
+  &-3,
+  &-3.swiper-wrapper
+    display: grid
+    grid-template-columns: repeat(3, calc(33.3% - 1.3rem))
+
+    @include desktop_s
+      gap: 0
+      display: flex
+
+  &-4
+    grid-template-columns: repeat(4, calc(25% - 1.5rem))
+
+    .col-3-4
+      grid-column-start: 2
+      grid-column-end: 5
+
+.mw-340
+  max-width: 340px
+
+.mw-495
+  max-width: 495px

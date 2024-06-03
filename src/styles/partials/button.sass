@@ -1,0 +1,52 @@
+.button
+  background: transparent
+  @include flex-center
+  display: inline-flex
+  gap: .8rem
+  padding: 1rem 1.5rem
+  min-height: 4rem
+  @include animate
+  font-size: 1.6rem
+  line-height: 2rem
+  border-radius: 6px
+  cursor: pointer
+
+  &.sm
+    min-height: 3rem
+    font-size: 1.4rem
+
+  &:disabled,
+  &.disabled
+    border-color: $disableColor
+    color: $disableColor
+    pointer-events: none
+    cursor: default
+
+  &.button-blue
+    color: $whiteColor
+    background: $blueColor
+    border: 1px solid $blueColor
+
+    &:focus,
+    &:hover
+      background: #1D4FBC
+
+  &.button-gray-border
+    color: $mainTitleColor
+    border: 1px solid #CBD5E1
+
+    &:focus,
+    &:hover
+      background: #CBD5E1
+
+  &.button-blue-border
+    color: #0F1729
+    border: 1px solid #7BA1F3
+
+    &:focus,
+    &:hover
+      color: #fff
+      background: #1D4FBC
+
+
+

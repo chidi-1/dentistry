@@ -1,0 +1,63 @@
+.swiper-type
+  overflow: hidden
+
+.swiper-wrapper
+  padding-bottom: 10px
+  align-items: stretch
+  align-content: stretch
+
+  .swiper-slide
+    display: flex
+    align-items: stretch
+    align-content: stretch
+    height: auto
+
+.swiper-horizontal > .swiper-scrollbar, .swiper-type-scrollbar.swiper-scrollbar-horizontal,
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal
+  left: 0 !important
+  right: 0 !important
+  height: 6px !important
+  background: #eaeef4 !important
+  border-radius: 4px
+  width: 100% !important
+
+  .swiper-scrollbar-drag
+    height: 6px
+    border-radius: 4px
+    background: #CBD5E1 !important
+
+.buttons-group
+  width: 7.5rem
+  @include flex-center-vert
+  flex-wrap: nowrap
+  gap: 1.5rem
+
+  @include mobile
+    display: none
+
+  .button-scroll
+    width: 3rem
+    height: 3rem
+    background-size: 100% 100% !important
+    transition: all 0.2s ease-in-out
+    cursor: pointer
+
+    &.swiper-button-disabled,
+    &.disabled
+      opacity: 0.5
+      cursor: default
+
+    &.swiper-button-lock
+      display: flex !important
+      opacity: 0.5
+      pointer-events: none
+
+    &.button-prev
+      background: url("/public/sprite.svg#button-prev-view") no-repeat 50% 50%
+      &:not(.swiper-button-disabled):hover
+        background: url("/public/sprite.svg#button-hover-prev-view") no-repeat 50% 50%
+    &.button-next
+      background: url("/public/sprite.svg#button-next-view") no-repeat 50% 50%
+      &:not(.swiper-button-disabled):hover
+        background: url("/public/sprite.svg#button-hover-next-view") no-repeat 50% 50%
+

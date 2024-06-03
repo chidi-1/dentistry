@@ -1,0 +1,1352 @@
+[
+  {
+    "block": "about",
+    "logo": 0,
+    "name": "Stomplan",
+    "description": "Пока нет описаний",
+    "site": "Пока нет ссылок",
+    "patient": "Анатолий Для Тестирования",
+    "pdf": "",
+    "label": "Общее описание"
+  },
+  {
+    "block": "condition",
+    "label": "Текущее состояние зубов",
+    "description": "Ниже представлена информация по текущему состоянию зубов, которую составили наши специалисты. Нажав на зуб вы сможете увидеть более подробное описание по нему.",
+    "sideTeeth": [
+      {
+        "id": "11",
+        "image": 0
+      },
+      {
+        "id": "12",
+        "image": 1
+      },
+      {
+        "id": "13",
+        "image": 2
+      },
+      {
+        "id": "15",
+        "image": 3
+      },
+      {
+        "id": "16",
+        "image": 4
+      },
+      {
+        "id": "17",
+        "image": 5
+      },
+      {
+        "id": "21",
+        "image": 6
+      },
+      {
+        "id": "22",
+        "image": 7
+      },
+      {
+        "id": "23",
+        "image": 8
+      },
+      {
+        "id": "24",
+        "image": 9
+      },
+      {
+        "id": "25",
+        "image": 10
+      },
+      {
+        "id": "26",
+        "image": 11
+      },
+      {
+        "id": "27",
+        "image": 12
+      },
+      {
+        "id": "28",
+        "image": 13
+      },
+      {
+        "id": "33",
+        "image": 14
+      },
+      {
+        "id": "34",
+        "image": 15
+      },
+      {
+        "id": "35",
+        "image": 16
+      },
+      {
+        "id": "36",
+        "image": 17
+      },
+      {
+        "id": "37",
+        "image": 18
+      },
+      {
+        "id": "38",
+        "image": 19
+      },
+      {
+        "id": "41",
+        "image": 20
+      },
+      {
+        "id": "43",
+        "image": 21
+      },
+      {
+        "id": "45",
+        "image": 22
+      },
+      {
+        "id": "46",
+        "image": 23
+      },
+      {
+        "id": "47",
+        "image": 24
+      },
+      {
+        "id": "48",
+        "image": 25
+      },
+      {
+        "id": "top",
+        "image": 26
+      }
+    ],
+    "topTeeth": [],
+    "teethDescription": [
+      {
+        "id": "11",
+        "conditions": [
+          {
+            "label": "Эндодонтическое лечение",
+            "tooltip": null
+          },
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "12",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "13",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "15",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "16",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "17",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [
+          {
+            "label": "Пародонтит",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "21",
+        "conditions": [
+          {
+            "label": "Эндодонтическое лечение",
+            "tooltip": null
+          },
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "22",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          },
+          {
+            "label": "Эндодонтическое лечение",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "23",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "24",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "25",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "26",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [
+          {
+            "label": "Пародонтит",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "27",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [
+          {
+            "label": "Зубные отложения",
+            "tooltip": null
+          },
+          {
+            "label": "Пародонтит",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "28",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Корни зуба",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "33",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "34",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "35",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "36",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "37",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "38",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "41",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Зубные отложения",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "43",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "45",
+        "conditions": [
+          {
+            "label": "Пломба",
+            "tooltip": null
+          },
+          {
+            "label": "Эндодонтическое лечение",
+            "tooltip": null
+          }
+        ],
+        "problems": [],
+        "comment": null
+      },
+      {
+        "id": "46",
+        "conditions": [
+          {
+            "label": "Эндодонтическое лечение",
+            "tooltip": null
+          },
+          {
+            "label": "Пломба",
+            "tooltip": null
+          }
+        ],
+        "problems": [
+          {
+            "label": "Пародонтит",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "47",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Кариес",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "48",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Отсутствует",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      },
+      {
+        "id": "top",
+        "conditions": [],
+        "problems": [
+          {
+            "label": "Недостаточный объем кости",
+            "tooltip": null
+          }
+        ],
+        "comment": null
+      }
+    ],
+    "categories": [
+      {
+        "name": "Фотопротокол",
+        "images": [
+          {
+            "label": "до4",
+            "image": 5
+          },
+          {
+            "label": "до3",
+            "image": 6
+          },
+          {
+            "label": "До7",
+            "image": 7
+          },
+          {
+            "label": "до2",
+            "image": 8
+          },
+          {
+            "label": "до",
+            "image": 9
+          },
+          {
+            "label": "До6",
+            "image": 10
+          }
+        ]
+      },
+      {
+        "name": "Иллюстрации",
+        "images": [
+          {
+            "label": "Без названия",
+            "image": 11
+          }
+        ]
+      },
+      {
+        "name": "Рентгеновские снимки",
+        "images": [
+          {
+            "label": "17 прицельный",
+            "image": 12
+          },
+          {
+            "label": "panorama",
+            "image": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block": "plans",
+    "label": "Планы лечения (варианты)",
+    "description": "Ниже представлено несколько планов лечения, которые наши специалисты составили для решения проблем в вашем случае.",
+    "items": [
+      {
+        "label": "Вариант 1 - Дентиум 2",
+        "description": null,
+        "period": "24 года",
+        "term": "2 недели",
+        "price": 1504444,
+        "image": null,
+        "stages": [
+          {
+            "type": "stage",
+            "label": "Гигиена",
+            "description": "На верхней челюсти - минимум. ",
+            "dates": "04.05.2024 - 04.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Гигиена полости рта (аппарат Vector)",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 8400,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 1 неделю"
+          },
+          {
+            "type": "stage",
+            "label": "Правая сторона имплантация",
+            "description": "",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Удаление зуба",
+                "teeth": [
+                  "47",
+                  "18",
+                  "28"
+                ],
+                "count": 3,
+                "price": 7000,
+                "discountPrice": null
+              },
+              {
+                "service": "Синуслифтинг открытый",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 104500,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 35000,
+                "discountPrice": null
+              },
+              {
+                "service": "PRF",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 11500,
+                "discountPrice": null
+              },
+              {
+                "service": "Кость",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 54000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантация зуба (операция)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 48000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантат зубной Dentium (Юж.Корея)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 9000,
+                "discountPrice": null
+              },
+              {
+                "service": "Формирователь десны Dentium",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 6000,
+                "discountPrice": null
+              },
+              {
+                "service": "Увеличение объема мягких тканей (в области 1-го имплантата)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 16500,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 4 недели"
+          },
+          {
+            "type": "stage",
+            "label": "Левая сторона имплантация",
+            "description": "",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Остеопластика (1 категория)",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 15000,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 35000,
+                "discountPrice": null
+              },
+              {
+                "service": "PRF",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 11500,
+                "discountPrice": null
+              },
+              {
+                "service": "Кость 1/2",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 27000,
+                "discountPrice": null
+              },
+              {
+                "service": "Пины хирургические",
+                "teeth": [
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ"
+                ],
+                "count": 8,
+                "price": 2000,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана ",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 21000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантация зуба (операция)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 48000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантат зубной Dentium (Юж.Корея)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 9000,
+                "discountPrice": null
+              },
+              {
+                "service": "Формирователь десны Dentium",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 6000,
+                "discountPrice": null
+              },
+              {
+                "service": "Увеличение объема мягких тканей (в области 1-го имплантата)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 16500,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 4 недели"
+          },
+          {
+            "type": "stage",
+            "label": "Протезирование временное",
+            "description": "Протезирование сразу и справа, и слева",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Абатмент временный Dentium",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 8000,
+                "discountPrice": null
+              },
+              {
+                "service": "Временная коронка лабораторная",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 8000,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 1 неделю"
+          },
+          {
+            "type": "stage",
+            "label": "Протезирование постоянное ",
+            "description": "Возможность изменения материала коронок на данном этапе.",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Абатмент постоянный Dentium",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 13000,
+                "discountPrice": null
+              },
+              {
+                "service": "Коронка из диоксида циркония",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 55000,
+                "discountPrice": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "КОПИЯ КОПИЯ Вариант 1 - Дентиум 2",
+        "description": null,
+        "period": "11 недель",
+        "term": "2 недели",
+        "price": 1504400,
+        "image": null,
+        "stages": [
+          {
+            "type": "stage",
+            "label": "Гигиена",
+            "description": "На верхней челюсти - минимум. ",
+            "dates": "04.05.2024 - 04.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Гигиена полости рта (аппарат Vector)",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 8400,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 1 неделю"
+          },
+          {
+            "type": "stage",
+            "label": "Правая сторона имплантация",
+            "description": "",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Удаление зуба",
+                "teeth": [
+                  "47",
+                  "18",
+                  "28"
+                ],
+                "count": 3,
+                "price": 7000,
+                "discountPrice": null
+              },
+              {
+                "service": "Синуслифтинг открытый",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 104500,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 35000,
+                "discountPrice": null
+              },
+              {
+                "service": "PRF",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 11500,
+                "discountPrice": null
+              },
+              {
+                "service": "Кость",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 54000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантация зуба (операция)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 48000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантат зубной Dentium (Юж.Корея)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 9000,
+                "discountPrice": null
+              },
+              {
+                "service": "Формирователь десны Dentium",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 6000,
+                "discountPrice": null
+              },
+              {
+                "service": "Увеличение объема мягких тканей (в области 1-го имплантата)",
+                "teeth": [
+                  "16",
+                  "15",
+                  "47"
+                ],
+                "count": 3,
+                "price": 16500,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 4 недели"
+          },
+          {
+            "type": "stage",
+            "label": "Левая сторона имплантация",
+            "description": "",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Остеопластика (1 категория)",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 15000,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 35000,
+                "discountPrice": null
+              },
+              {
+                "service": "PRF",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 11500,
+                "discountPrice": null
+              },
+              {
+                "service": "Кость 1/2",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 27000,
+                "discountPrice": null
+              },
+              {
+                "service": "Пины хирургические",
+                "teeth": [
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ",
+                  "ВЧ"
+                ],
+                "count": 8,
+                "price": 2000,
+                "discountPrice": null
+              },
+              {
+                "service": "Мембрана ",
+                "teeth": [
+                  "ВЧ"
+                ],
+                "count": 1,
+                "price": 21000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантация зуба (операция)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 48000,
+                "discountPrice": null
+              },
+              {
+                "service": "Имплантат зубной Dentium (Юж.Корея)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 9000,
+                "discountPrice": null
+              },
+              {
+                "service": "Формирователь десны Dentium",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 6000,
+                "discountPrice": null
+              },
+              {
+                "service": "Увеличение объема мягких тканей (в области 1-го имплантата)",
+                "teeth": [
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 4,
+                "price": 16500,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 4 недели"
+          },
+          {
+            "type": "stage",
+            "label": "Протезирование временное",
+            "description": "Протезирование сразу и справа, и слева",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Абатмент временный Dentium",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 8000,
+                "discountPrice": null
+              },
+              {
+                "service": "Временная коронка лабораторная",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 8000,
+                "discountPrice": null
+              }
+            ]
+          },
+          {
+            "type": "interval",
+            "label": "через 1 неделю"
+          },
+          {
+            "type": "stage",
+            "label": "Протезирование постоянное ",
+            "description": "Возможность изменения материала коронок на данном этапе.",
+            "dates": "19.05.2024 - 19.05.2024",
+            "before": {
+              "illustration": null,
+              "teeth": []
+            },
+            "after": {
+              "illustration": null,
+              "teeth": []
+            },
+            "budget": [
+              {
+                "service": "Абатмент постоянный Dentium",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 13000,
+                "discountPrice": null
+              },
+              {
+                "service": "Коронка из диоксида циркония",
+                "teeth": [
+                  "15",
+                  "16",
+                  "47",
+                  "24",
+                  "25",
+                  "36",
+                  "37"
+                ],
+                "count": 7,
+                "price": 55000,
+                "discountPrice": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block": "team",
+    "label": "Команда",
+    "description": "Мы собираем команду, которая будет проводить ваше лечение. Вы всегда сможете быть на связи с вашим куратором.",
+    "doctors": [
+      {
+        "name": "test test test4",
+        "image": 0,
+        "description": ""
+      },
+      {
+        "name": "test test test6",
+        "image": 1,
+        "description": ""
+      },
+      {
+        "name": "Имя Примерная Отчество",
+        "image": 2,
+        "description": ""
+      },
+      {
+        "name": "qw eqw qw",
+        "image": 3,
+        "description": ""
+      },
+      {
+        "name": "цукцук укцук цукцукцу",
+        "image": 4,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "block": "curator",
+    "label": "Куратор",
+    "name": "Антон Антонов Сергеевич",
+    "image": null,
+    "phones": [
+      ""
+    ],
+    "email": null,
+    "whatsapp": null,
+    "telegram": null,
+    "description": "fdsgvsfv"
+  },
+  {
+    "block": "offers",
+    "data": [
+      {
+        "header": "Собственная техническая лаборатория",
+        "description": "Лаборатория оснащена по последнему слову техники. Позволяет быстро и качественно изготавливать необходимые ортопедические конструкции любой сложности. Работа без посредников сокращает сроки протезирования, а также существенно отражается на ценообразовании."
+      },
+      {
+        "header": " Гарантия на лечение от производителя и клиники",
+        "description": "Наша клиника предоставляет пожизненную гарантию от производителя имплантов, а также гарантию на работы. В случае оттторжения имплантов, мы переустановим их за наш счёт."
+      },
+      {
+        "header": "Современная техника визуализации",
+        "description": "Для постановки правильного диагноза и планирования лечения, клиника оснащена 3D-томографом Немецкой компании «SIRONA», ортопантомографом и радиовизиографом."
+      },
+      {
+        "header": "Собственная техническая лаборатория",
+        "description": "Лаборатория оснащена по последнему слову техники. Позволяет быстро и качественно изготавливать необходимые ортопедические конструкции любой сложности. Работа без посредников сокращает сроки протезирования, а также существенно отражается на ценообразовании."
+      },
+      {
+        "header": "Гарантия на лечение от производителя и клиники",
+        "description": "Наша клиника предоставляет пожизненную гарантию от производителя имплантов, а также гарантию на работы. В случае оттторжения имплантов, мы переустановим их за наш счёт."
+      }
+    ],
+    "label": "Преимущества и спецпредложения"
+  }
+]

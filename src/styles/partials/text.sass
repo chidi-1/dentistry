@@ -1,0 +1,103 @@
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+h1
+  @include font-params(4rem, 700, $mainTitleColor)
+  line-height: 4.8rem
+
+  @include tablet
+    font-size: 3.2rem
+    line-height: 4rem
+
+h2
+  @include font-params(3.2rem, 700, $mainTitleColor)
+  line-height: 4rem
+
+  @include tablet
+    font-size: 2.4rem
+    line-height: 3.2rem
+
+h3
+  @include font-params(2.4rem, 700, $mainTitleColor)
+  line-height: 3.2rem
+
+  @include tablet
+    font-size: 2rem
+    line-height: 2.8rem
+  @include mobile
+    font-size: 1.8rem
+    line-height: 2.4rem
+
+h4
+  @include font-params(2rem, 700, $mainTitleColor)
+  line-height: 2.8rem
+
+  @include tablet
+    font-size: 1.6rem
+    line-height: 2.4rem
+
+h5
+  @include font-params(1.8rem, 700, $mainTitleColor)
+  line-height: 2.4rem
+
+h6
+  font-weight: 600
+
+.c-gray
+  color: $grayFontColor !important
+
+*.fs-10
+  font-size: $fontSize_10
+*.fs-13
+  font-size: $fontSize_13
+*.fs-14
+  font-size: 1.4rem
+  line-height: 1.8rem
+*.fs-16
+  font-size: $fontSize_16
+*.fs-20
+  font-size: $fontSize_20
+*.fs-25
+  font-size: $fontSize_25
+*.fs-31
+  font-size: $fontSize_31
+*.fs-39
+  font-size: $fontSize_39
+
+a:not(.button)
+  &:hover,
+  &:focus
+    text-decoration: underline
+  &:active
+    color: $blueColor
+    text-decoration: underline
+
+a,
+button
+  cursor: pointer
+
+.text-center
+  text-align: center
+
+.text-list
+  li
+    display: flex
+    align-items: center
+    padding-left: 2rem
+    position: relative
+    color: #1D283A
+
+    &:before
+      position: absolute
+      content: ""
+      left: 1rem
+      top: 0.9rem
+      transform: translate(-50%,-50%)
+      border-radius: 100%
+      width: 3px
+      height: 3px
+      background: currentColor
+
+
+*.c-blue
+  color: $blueColor

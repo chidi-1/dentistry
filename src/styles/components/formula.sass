@@ -1,0 +1,570 @@
+.formula
+  @include flex-column
+  gap: 8px
+
+  &.reverse
+    flex-direction: column-reverse
+
+  &__jaw
+    display: grid
+    grid-template-columns: 48px repeat(2, 56px) repeat(10, 48px) repeat(2, 56px) 48px
+    gap: 3px
+
+    //@include desktop_m
+      gap: 2px
+
+    &.bottom
+      .formula__el
+        flex-direction: column-reverse
+
+      .formula__tooth
+        padding-bottom: 17px
+
+  &__el
+    padding: 10px 11px
+    @include flex-column
+    @include border(1px, 12px, transparent)
+    cursor: pointer
+    background: #ffffff
+
+    &.active,
+    &:hover
+      border-color: $grayBorderColor
+
+    &.healthy
+      &.active,
+      &:hover
+        border-color: $grayBorderColor
+    &.actual
+      &.active,
+      &:hover
+        border-color: $grayBorderColor
+
+      .formula__number
+        span
+          background: $grayBorderColor
+
+    &.absent
+      &.active,
+      &:hover
+        border-color: $grayBorderColor
+
+      .formula__number
+        span
+          background: $grayBorderColor
+
+    &.trouble
+      &.active,
+      &:hover
+        border-color: $toothCherryDark
+
+      .formula__number
+        span
+          color: $redColor
+          background: $toothCherryLight
+          border-color: $toothCherryLight
+
+    &.treated
+      &.active,
+      &:hover
+        border-color: $toothLimeDark
+
+      .formula__number
+        span
+          color: $limeColor
+          background: $toothLimeLight
+          border-color: $toothLimeLight
+
+    &.issue
+      &.active,
+      &:hover
+        border-color: $toothYellowDark
+
+      .formula__number
+        span
+          color: $yellowColor
+          background: $toothYellowLight
+          border-color: $toothYellowLight
+
+  &__tooth
+    height: 112px
+    display: flex
+    align-items: flex-end
+    padding-bottom: 17px
+
+    &.right
+      transform: scaleX(-1)
+    &.bottom
+      transform: scaleY(-1)
+    &.bottom.right
+      transform: scale(-1)
+
+  &__number
+    text-align: center
+
+    span
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 26px
+      height: 26px
+      border-radius: 100%
+      font-size: 16px
+      @include border(1px, 100%, transparent)
+
+  .tooth
+    position: relative
+
+    *
+      position: absolute
+      left: 0
+      top: 0
+
+    &-8
+      width: 32px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-8-view")
+
+      *
+        width: 32px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-8-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-8-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-8-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-8-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-8-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-8-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-8-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-8-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-8-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-8-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-8-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-8-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-8-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-8-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-8-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-8-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-8-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-8-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-8-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-8-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-8-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-8-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-8-defect-view")
+
+    &-7
+      width: 37px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-7-view")
+
+      *
+        width: 37px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-7-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-7-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-7-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-7-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-7-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-7-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-7-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-7-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-7-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-7-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-7-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-7-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-7-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-7-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-7-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-7-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-7-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-7-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-7-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-7-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-7-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-7-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-7-defect-view")
+
+    &-6
+      width: 40px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-6-view")
+
+      *
+        width: 40px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-6-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-6-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-6-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-6-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-6-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-6-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-6-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-6-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-6-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-6-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-6-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-6-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-6-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-6-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-6-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-6-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-6-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-6-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-6-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-6-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-6-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-6-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-6-defect-view")
+
+    &-5
+      width: 25px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-5-view")
+
+      *
+        width: 25px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-5-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-5-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-5-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-5-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-5-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-5-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-5-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-5-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-5-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-5-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-5-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-5-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-5-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-5-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-5-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-5-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-5-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-5-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-5-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-5-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-5-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-5-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-5-defect-view")
+
+    &-4
+      width: 25px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-4-view")
+
+      *
+        width: 25px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-4-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-4-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-4-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-4-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-4-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-4-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-4-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-4-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-4-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-4-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-4-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-4-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-4-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-4-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-4-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-4-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-4-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-4-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-4-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-4-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-4-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-4-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-4-defect-view")
+
+    &-3
+      width: 28px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-3-view")
+
+      *
+        width: 28px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-3-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-3-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-3-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-3-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-3-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-3-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-3-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-3-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-3-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-3-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-3-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-3-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-3-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-3-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-3-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-3-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-3-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-3-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-3-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-3-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-3-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-3-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-3-defect-view")
+
+    &-2
+      width: 21px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-2-view")
+
+      *
+        width: 21px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-2-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-2-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-2-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-2-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-2-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-2-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-2-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-2-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-2-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-2-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-2-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-2-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-2-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-2-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-2-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-2-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-2-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-2-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-2-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-2-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-2-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-2-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-2-defect-view")
+
+    &-1
+      width: 27px
+      height: 93px
+      background: url("/public/sprite.svg#tooth-1-view")
+
+      *
+        width: 27px
+        height: 93px
+
+      &.absent
+        background: url("/public/sprite.svg#tooth-1-absent-view")
+      .filling
+        background: url("/public/sprite.svg#tooth-1-filling-view")
+      .canal
+        background: url("/public/sprite.svg#tooth-1-canal-view")
+      .tab
+        background: url("/public/sprite.svg#tooth-1-tab-view")
+      .composite
+        background: url("/public/sprite.svg#tooth-1-composite-view")
+      .core
+        background: url("/public/sprite.svg#tooth-1-core-view")
+      .crown
+        background: url("/public/sprite.svg#tooth-1-crown-view")
+      .veneer
+        background: url("/public/sprite.svg#tooth-1-veneer-view")
+      .pin
+        background: url("/public/sprite.svg#tooth-1-pin-view")
+      .root
+        background: url("/public/sprite.svg#tooth-1-root-view")
+      .ground-crown
+        background: url("/public/sprite.svg#tooth-1-ground-crown-view")
+      .implant
+        background: url("/public/sprite.svg#tooth-1-implant-view")
+      .abutment
+        background: url("/public/sprite.svg#tooth-1-abutment-view")
+      .shaper
+        background: url("/public/sprite.svg#tooth-1-shaper-view")
+      .caries
+        background: url("/public/sprite.svg#tooth-1-caries-view")
+      .pulpitis
+        background: url("/public/sprite.svg#tooth-1-pulpitis-view")
+      .periodontitis
+        background: url("/public/sprite.svg#tooth-1-periodontitis-view")
+      .cyst
+        background: url("/public/sprite.svg#tooth-1-cyst-view")
+      .granuloma
+        background: url("/public/sprite.svg#tooth-1-granuloma-view")
+      .discoloration
+        background: url("/public/sprite.svg#tooth-1-discoloration-view")
+      .plaque
+        background: url("/public/sprite.svg#tooth-1-plaque-view")
+      .foreign
+        background: url("/public/sprite.svg#tooth-1-foreign-view")
+      .defect
+        background: url("/public/sprite.svg#tooth-1-defect-view")
+
