@@ -7,13 +7,16 @@ import CurrentSection from "./components/CurrentSection";
 import PlansSection from "./components/Plan/PlansSection";
 
 export const DataContext = createContext(null);
+export const IconContext = createContext(null);
 const components = {
     about: Banner,
     condition: CurrentSection,
     plans: PlansSection,
 };
 
-function App({data}) {
+function App({data, icons}) {
+    //console.log(icons)
+
     const [globalData, setGlobalData] = useState(data)
     const [count, setCount] = useState(0)
 
@@ -35,19 +38,21 @@ function App({data}) {
     return (
         <>
             <DataContext.Provider value={globalData}>
-                <Header data={globalData.filter((block) => block.block === 'about')[0]}/>
-                <main>
-                    {globalData.map((block) => {
-                        if(block.block === 'about') {
-                            let Section = components[block.block];
-                            return <Section key={block.block} data={block}/>
-                        }
-                        if(block.block === 'condition') {
-                            let Section = components[block.block];
-                            return <Section key={block.block} data={block}/>
-                        }
-                    })}
-                </main>
+                <IconContext.Provider value={icons}>
+                    <Header data={globalData.filter((block) => block.block === 'about')[0]}/>
+                    <main>
+                        {globalData.map((block) => {
+                            if (block.block === 'about') {
+                                let Section = components[block.block];
+                                return <Section key={block.block} data={block}/>
+                            }
+                            if (block.block === 'condition') {
+                                let Section = components[block.block];
+                                return <Section key={block.block} data={block}/>
+                            }
+                        })}
+                    </main>
+                </IconContext.Provider>
             </DataContext.Provider>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
