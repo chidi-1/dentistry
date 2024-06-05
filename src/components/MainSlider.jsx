@@ -34,39 +34,7 @@ export default function MainSlider({children, title, space}) {
             </div>
             <div className="slider__content swiper">
                 <swiper-container init="false" ref={swiperRef} class="swiper-wrapper">
-                    <swiper-slide class="swiper-slide">
-                        <div className="variant">
-                            <span className="variant__title">На системе AstraTech (Швеция)</span>
-                            <div className="variant__param"><span
-                                className="name">Общая сумма</span><span className="value">749 000 рублей</span>
-                            </div>
-                            <div className="variant__param"><span
-                                className="name">Сумма со скидкой 15%</span><span
-                                className="value">637 000 рублей</span></div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="swiper-slide">
-                        <div className="variant">
-                            <span className="variant__title">На системе AstraTech (Швеция)</span>
-                            <div className="variant__param"><span
-                                className="name">Общая сумма</span><span className="value">749 000 рублей</span>
-                            </div>
-                            <div className="variant__param"><span
-                                className="name">Сумма со скидкой 15%</span><span
-                                className="value">637 000 рублей</span></div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="swiper-slide">
-                        <div className="variant">
-                            <span className="variant__title">На системе AstraTech (Швеция)</span>
-                            <div className="variant__param"><span
-                                className="name">Общая сумма</span><span className="value">749 000 рублей</span>
-                            </div>
-                            <div className="variant__param"><span
-                                className="name">Сумма со скидкой 15%</span><span
-                                className="value">637 000 рублей</span></div>
-                        </div>
-                    </swiper-slide>
+                    {children}
                 </swiper-container>
                 <div className="swiper-scrollbar">
                     <div className="swiper-scrollbar-drag"></div>

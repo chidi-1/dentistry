@@ -32,7 +32,7 @@ export default function CurrentSection({data}) {
         let oral = {}
         for (let i = 11; i <= 28; i++) {
             if (i < 19 || i >= 21) {
-                if ((teethIconsKeyObject[i])) {
+                if (teethIconsKeyObject[i]) {
                     top[i] = {
                         'defaultIcon': false,
                         'iconId': teethIconsKeyObject[i].image,
@@ -84,7 +84,7 @@ export default function CurrentSection({data}) {
         setBottomJaw(bottom);
         setOral(oral);
 
-    }, [data.teethDescription, data.sideTeeth])
+    }, [data])
 
     return (
         <div className='container'>
@@ -119,11 +119,11 @@ export default function CurrentSection({data}) {
                                             <img src={oral.top.defaultIcon && oral.top.iconId ? icons.defaultTeeth[oral.top.iconId] : icons.teeth[oral.top.iconId]} />
                                             <span>ВЧ</span>
                                         </div>}
-                                        {oral.middle && <div className="jaw js--tooth-tab" data-tooth="top">
+                                        {oral.middle && <div className="jaw">
                                             <img src={oral.middle.defaultIcon && oral.middle.iconId ? icons.defaultTeeth[oral.middle.iconId] : icons.teeth[oral.middle.iconId]} />
                                             <span>Полость рта</span>
                                         </div>}
-                                        {oral.middle && <div className="jaw js--tooth-tab" data-tooth="top">
+                                        {oral.middle && <div className="jaw">
                                             <img src={oral.bottom.defaultIcon && oral.bottom.iconId ? icons.defaultTeeth[oral.bottom.iconId] : icons.teeth[oral.bottom.iconId]} />
                                             <span>НЧ</span>
                                         </div>}

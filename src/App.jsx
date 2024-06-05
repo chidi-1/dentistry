@@ -8,14 +8,14 @@ import PlansSection from "./components/Plan/PlansSection";
 
 export const DataContext = createContext(null);
 export const IconContext = createContext(null);
+export const PhotoContext = createContext(null);
 const components = {
     about: Banner,
     condition: CurrentSection,
     plans: PlansSection,
 };
 
-function App({data, icons}) {
-    //console.log(icons)
+function App({data, icons, photos}) {
 
     const [globalData, setGlobalData] = useState(data)
     const [count, setCount] = useState(0)
@@ -39,19 +39,25 @@ function App({data, icons}) {
         <>
             <DataContext.Provider value={globalData}>
                 <IconContext.Provider value={icons}>
-                    <Header data={globalData.filter((block) => block.block === 'about')[0]}/>
-                    <main>
-                        {globalData.map((block) => {
-                            if (block.block === 'about') {
-                                let Section = components[block.block];
-                                return <Section key={block.block} data={block}/>
-                            }
-                            if (block.block === 'condition') {
-                                let Section = components[block.block];
-                                return <Section key={block.block} data={block}/>
-                            }
-                        })}
-                    </main>
+                    <PhotoContext.Provider value={photos}>
+                        <Header data={globalData.filter((block) => block.block === 'about')[0]}/>
+                        <main>
+                            {globalData.map((block) => {
+                                if (block.block === 'about') {
+                                    let Section = components[block.block];
+                                    return <Section key={block.block} data={block}/>
+                                }
+                                if (block.block === 'condition') {
+                                    let Section = components[block.block];
+                                    return <Section key={block.block} data={block}/>
+                                }
+                                if (block.block === 'plans') {
+                                    let Section = components[block.block];
+                                    return <Section key={block.block} data={block}/>
+                                }
+                            })}
+                        </main>
+                    </PhotoContext.Provider>
                 </IconContext.Provider>
             </DataContext.Provider>
             <div>

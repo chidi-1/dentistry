@@ -1,23 +1,39 @@
-import {useCallback, useEffect, useRef, useState} from "react";
+import {useCallback, useContext, useEffect, useRef, useState} from "react";
 import {register} from 'swiper/element/bundle';
 import Fancybox from "./Fancybox";
+import {IconContext, PhotoContext} from "../App";
 
 export default function MediaSlider({media}) {
+    const icons = useContext(IconContext);
+    const photos = useContext(PhotoContext);
+
     const [showSlider, setShowSlider] = useState(false);
     const [mediaData, setMediaData] = useState(() => media);
     const [filterActive, setFilterActive] = useState();
+    const [filterData, setFilterData] = useState([])
     const swiperButtonPrev = useRef(null);
     const swiperButtonNext = useRef(null);
 
     const swiperRef = useRef(null);
 
-    const changeSlider = useCallback((type) => {
-        setFilterActive(type)
-        type.length ? setMediaData(mediaData.filter((item) => item.type == type)) : setMediaData(mediaData);
+    useEffect(() => {
+        let filterData = [];
+        filterData.push({'Все': media.reduce((counter, item) => counter + item.images.length, 0)})
+        media.forEach((item, index) => {
+            filterData.push({[item.name]: item.images.length})
+        })
+        setFilterData(filterData);
     }, [media])
 
+    const changeSlider = useCallback((type) => {
+        if (type !== filterActive) {
+            setFilterActive(type);
+            type === 0 ? setMediaData(media) : setMediaData(media.filter((item, index) => index === type - 1))
+        }
+    }, [filterActive])
+
     useEffect(() => {
-/*        register();
+        register();
         const params = {
             slidesPerView: 'auto',
             navigation: {
@@ -29,30 +45,19 @@ export default function MediaSlider({media}) {
 
         Object.assign(swiperRef.current, params);
 
-        swiperRef.current.initialize();*/
+        swiperRef.current.initialize();
     }, []);
 
     return (
         <div className="media swiper-wrap">
             <div className="section__header">
                 <div className="media__filter">
-                    <button onClick={() => changeSlider('')} className={!filterActive ? 'active' : ''}>Все (10)</button>
-                    <button onClick={() => changeSlider('3d')} className={filterActive == '3d' ? 'active' : ''}>3D
-                        сканирование (1)
-                    </button>
-                    <button onClick={() => changeSlider('photo')}
-                            className={filterActive == 'photo' ? 'active' : ''}>Фото улыбки (3)
-                    </button>
-                    <button onClick={() => changeSlider('illustration')}
-                            className={filterActive == 'illustration' ? 'active' : ''}>Иллюстрации (1)
-                    </button>
-                    <button onClick={() => changeSlider('xray')}
-                            className={filterActive == 'xray' ? 'active' : ''}>Рентген (5)
-                    </button>
+                    {filterData.map((item, index) => <button key={'button' + index} onClick={() => changeSlider(index)}
+                                                             className={filterActive == index ? 'active' : ''}>{Object.keys(item)[0]} ({Object.values(item)[0]})</button>)}
                 </div>
                 <div className="buttons-group">
-                    {/*<button ref={swiperButtonPrev} className="button-scroll button-prev"></button>
-                    <button ref={swiperButtonNext} className="button-scroll button-next"></button>*/}
+                    <button ref={swiperButtonPrev} className="button-scroll button-prev"></button>
+                    <button ref={swiperButtonNext} className="button-scroll button-next"></button>
                 </div>
             </div>
             <div className="media__scroll-wrap">
@@ -67,26 +72,26 @@ export default function MediaSlider({media}) {
                             },
                         }}
                     >
-                        {/*<swiper-container init="false" ref={swiperRef} class="swiper-wrapper">
-                            {
-                                mediaData.map((item) => {
+                        <swiper-container init="false" ref={swiperRef} className="swiper-wrapper">
+                            {mediaData.map((item) => {
+                                return (item.images.map((photo) => {
                                     return (
-                                        <swiper-slide key={item.img} class="swiper-slide">
-                                            <div className="media__el" data-filter="3d">
+                                        <swiper-slide key={photo.image} class="swiper-slide">
+                                            <div className="media__el">
                                                 <a className="media__img"
                                                    data-fancybox="gallery"
-                                                   data-caption={item.text}
-                                                   data-src={item.img}>
+                                                   data-caption={photo.label === 'Без названия' ? '' : photo.label}
+                                                   data-src={photos[photo.image]}>
 
-                                                    <img src={item.img}/>
+                                                    <img src={icons.another[photo.image]}/>
                                                 </a>
-                                                <span>{item.text}</span>
+                                                {photo.label === 'Без названия' ? '' : <span>{photo.label}</span>}
                                             </div>
                                         </swiper-slide>
                                     )
-                                })
-                            }
-                        </swiper-container>*/}
+                                }))
+                            })}
+                        </swiper-container>
                     </Fancybox>
                     <div className="swiper-scrollbar">
                         <div className="swiper-scrollbar-drag"></div>
